@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "9e9ca426-04fa-4fbb-9d18-4bebd0f66b1f",
+		"name": "DemoCourse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 024f7561-298e-43ba-adcb-70b688cfa68c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"hussainaaa\",\r\n    \"address\": \"shaaa\",\r\n    \"telephone\": \"1234567890\",\r\n    \"emailAddress\": \"sharash@yopmail.com\",\r\n    \"courseId\":\"25e4ffc9-e2a1-4478-b205-40d14959c5f6\",\r\n    \"id\": \"6df4e422-ec2e-44ed-b7f4-3ec2d4d6d1b9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 024f7561-298e-43ba-adcb-70b688cfa68c"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=F020C2DCCD01744471E32C2132A3836A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullName\": \"Java\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/addcourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"addcourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET course",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 024f7561-298e-43ba-adcb-70b688cfa68c"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=F020C2DCCD01744471E32C2132A3836A; JSESSIONID=F020C2DCCD01744471E32C2132A3836A"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/course/getcourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"getcourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 024f7561-298e-43ba-adcb-70b688cfa68c"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=F020C2DCCD01744471E32C2132A3836A; JSESSIONID=F020C2DCCD01744471E32C2132A3836A; JSESSIONID=F020C2DCCD01744471E32C2132A3836A"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/course/deleteStudent/a3b981e5-202c-4faa-83c0-50481ab4f7fd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"deleteStudent",
+						"a3b981e5-202c-4faa-83c0-50481ab4f7fd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetStudentALlDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 024f7561-298e-43ba-adcb-70b688cfa68c"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=F020C2DCCD01744471E32C2132A3836A; JSESSIONID=F020C2DCCD01744471E32C2132A3836A; JSESSIONID=F020C2DCCD01744471E32C2132A3836A"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/course/getStudentCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"getStudentCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"DURGESH\",\r\n    \"password\": \"DURGESH\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
